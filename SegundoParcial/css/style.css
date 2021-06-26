@@ -1,0 +1,112 @@
+body
+{
+    background-color: aqua;
+}
+
+p
+{
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:black;
+
+}
+
+h1
+{
+    
+    align-self: center;
+}
+
+
+
+.botonAlta
+{
+    width: 8% ;
+    background-color:lightseagreen;
+    font-size: larger;
+    color: white;
+    padding: 10px 24px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.botonPromediar
+{
+    width: 14% ;
+    background-color:lightseagreen;
+    font-size: larger;
+    color: white;
+    padding: 10px 24px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+
+
+.botones
+{
+    width: 25%;
+    background-color:lightseagreen;
+    color: white;
+    padding: 10px 24px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+   
+
+}
+
+
+#divAlta
+{
+    background-color:cornflowerblue;
+    width: 25%;
+    height: 45%;
+    position: fixed;  
+    /* display: flex;  */
+    top: 50%;
+    left: 50%;
+    /* flex-direction: column;
+    justify-content:flex-start;
+    align-items: stretch; */
+    transform: translate(-50%, -50%);
+    
+}
+
+#tabla {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(240, 188, 140);
+  border: 1px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+}
+
+/*los estilos de la tabla y la animacion cuando te paras en una fila son auspiciados por w3schools*/
+#tabla th,
+#tabla td {
+  border: 1px solid rgb(221, 221, 221);
+  padding: 8px;
+}
+
+#tabla tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#tabla tr:hover {
+  background-color: #ddd;
+}
+
+#tabla th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4c98af;
+  color: white;
+}

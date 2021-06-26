@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Segundo Parcial</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/Vehiculo.js"></script>
+    <script src="/js/Camioneta.js"></script>
+    <script src="/js/Auto.js"></script>
+    <script src="/js/Main.js"></script>
+  </head>
+  <body>
+    <h1>Segundo Parcial</h1>
+    <br />
+    <br />
+    <input type="button" value="Alta" class="botonAlta" id="btnAlta" />
+    <input
+      type="button"
+      value="precio promedio"
+      class="botonPromediar"
+      id="btnPromediar"
+    />
+    <input type="button" value="Filtrar!" class="botonAlta" id="btnFiltrar" />
+    <select name="opcionesFiltrar" id="txtFiltrar">
+      <option value="Autos">Autos</option>
+      <option value="Camionetas">Camionetas</option>
+      <option value="Todos">Todos</option>
+    </select>
+
+    <div id="divAlta" hidden>
+      <p>Alta Vehiculo</p>
+      <label for="txtId"
+        >Id<br />
+        <input type="text" name="txtId" id="txtId" disabled />
+      </label>
+      <br />
+      <br />
+      <label for="txtMarca"
+        >Marca<br />
+        <input type="text" name="txtMarca" id="txtMarca" />
+      </label>
+      <br />
+      <br />
+      <label for="txtModelo"
+        >Modelo<br />
+        <input type="text" name="txtModelo" id="txtModelo" />
+      </label>
+      <br />
+      <br />
+      <label for="txtPrecio"
+        >Precio<br />
+        <input type="text" name="txtPrecio" id="txtPrecio" />
+      </label>
+      <br />
+      <br />
+      <label for="tipo"
+        >Tipo<br />
+        <select name="tipo" id="txtTipo">
+          <option value="auto" selected>auto</option>
+          <option value="camioneta">camioneta</option>
+        </select>
+      </label>
+      <br />
+
+      <label for="txt4x4"
+        >Es 4x4
+        <input type="checkbox" name="txt4x4" id="txt4x4" checked />
+      </label>
+      <br />
+      <br />
+      <input type="button" value="Cerrar" id="btnCerrar" class="botones" />
+      <input type="button" value="Agregar" id="btnAgregar" class="botones" />
+    </div>
+    <div class="listadoVehiculos">
+      <table id="tabla">
+        <tr>
+          <th>Id</th>
+          <th>Marca</th>
+          <th>Modelo</th>
+          <th>Precio</th>
+          <th>Accion</th>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
